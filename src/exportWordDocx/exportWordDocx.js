@@ -6,7 +6,7 @@ import PizZip from "pizzip";
 export const exportWordDocx = (demoUrl, docxData, fileName) => {
     // 读取并获得模板文件的二进制内容
     JSZipUtils.getBinaryContent(
-        process.env.VUE_APP_PUBLIC_PATH + demoUrl,
+        demoUrl,
         function (error, content) {
             // 抛出异常
             if (error) {
